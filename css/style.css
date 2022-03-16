@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #333;
+}
+
+.card {
+  position: relative;
+  margin: 20px 20px;
+  height: 400px;
+  width: 300px;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+}
+
+.card .img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  border-radius: 15px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.card .one {
+  background-image: url("../media/img/gil.jpg");
+  background-position: center;
+}
+
+.card .two {
+  background-image: url("../media/img/szpak.jpg");
+  background-position: 80% 30%;
+}
+
+.card .three {
+  background-image: url("../media/img/wilga.jpg");
+  background-position: 50% 30%;
+}
+.card .four {
+  background-image: url("../media/img/spiewak.jpg");
+  background-position: 50% 30%;
+}
+.card .five {
+  background-image: url("../media/img/jaskolka.jpg");
+  background-position: 35% 60%;
+}
+
+.card .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+  opacity: 0;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.card .text h2 {
+  margin-bottom: 10px;
+}
+
+.card .text audio {
+  padding: 0;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.card .text {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.card:hover > .text {
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
+  opacity: 1;
+}
+
+.card:hover > .img {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+
+/*# sourceMappingURL=style.css.map */
