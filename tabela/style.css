@@ -1,0 +1,31 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 36px;
+}
+table {
+	margin: 100px auto;
+	text-align: center;
+	border-spacing: 0;
+}
+table,
+td {
+	border: 1px solid #000;
+}
+td {
+	padding: 10px 40px;
+}
+.first-row {
+	padding: 0;
+	background-color: rgb(150, 168, 221);
+}
+.first-column {
+	padding: 0 10px;
+	background-color: rgb(150, 168, 221);
+}
+.combination {
+	background-color: bisque;
+}
