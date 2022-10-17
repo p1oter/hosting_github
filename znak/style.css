@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: flex;
+	justify-content: center;
+	background-color: #444;
+	font-family: sans-serif;
+}
+.octagon-wrap {
+	height: clamp(100px, 30vh, 500px);
+	width: clamp(100px, 30vh, 500px);
+	position: relative;
+	margin-top: 15vh;
+	overflow: hidden;
+}
+.octagon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	transform: rotate(45deg);
+	background: red;
+	border: 3px solid #fff;
+}
+.octagon:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	right: -3px;
+	bottom: -3px;
+	left: -3px;
+	transform: rotate(45deg);
+	border: inherit;
+}
+.octagon p {
+	/* position: absolute; */
+	margin-top: 9vh;
+	margin-left: 7%;
+	/* top: -3px; right: -3px; bottom: -3px; left: -3px; */
+	transform: rotate(-45deg);
+	font-size: clamp(26px, 9vh, 9vh);
+	letter-spacing: 3px;
+	color: #fff;
+}
