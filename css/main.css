@@ -1,0 +1,95 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  color: #fff;
+  background-color: #333;
+  height: 100vh;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.menu {
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  width: 60vw;
+  font-family: sans-serif;
+  background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+  border-radius: 10px;
+}
+.menu h2 {
+  margin-top: 25px;
+  font-size: 55px;
+  font-weight: 400;
+}
+.menu p {
+  margin-top: 20px;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.menu a {
+  font-size: 35px;
+  text-decoration: none;
+  color: tomato;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.menu a:hover {
+  color: rgb(172, 61, 227);
+}
+.menu li {
+  margin: 5px 0;
+  list-style-type: none;
+}
+
+.square,
+.reverse-square {
+  height: 20vh;
+  background-image: url("../images/bg.png");
+  -webkit-animation: slider 10s linear infinite;
+          animation: slider 10s linear infinite;
+}
+
+.reverse-square {
+  animation: slider 10s linear infinite reverse;
+}
+
+@-webkit-keyframes slider {
+  from {
+    background-position: 0 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes slider {
+  from {
+    background-position: 0 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}/*# sourceMappingURL=main.css.map */

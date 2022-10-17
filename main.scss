@@ -1,0 +1,76 @@
+$time: 10s;
+$tf: linear;
+$i: infinite;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	color: #fff;
+	background-color: #333;
+	height: 100vh;
+}
+.wrapper {
+	// width: 1800px;
+	margin: 0 auto;
+}
+.menu {
+	position: absolute;
+	top: 15vh;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: clamp(30vh, 50vh, 50vh);
+	width: 60vw;
+	font-family: sans-serif;
+	background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+	border-radius: 10px;
+	h2 {
+		margin-top: 25px;
+		font-size: 55px;
+		font-weight: 400;
+	}
+
+	p {
+		margin-top: 20px;
+		font-size: 40px;
+		margin-bottom: 15px;
+	}
+
+	a {
+		font-size: 35px;
+		text-decoration: none;
+		color: tomato;
+		transition: color 0.4s;
+	}
+
+	a:hover {
+		color: rgb(172, 61, 227);
+	}
+	li {
+		margin: 5px 0;
+		list-style-type: none;
+	}
+}
+.square,
+.reverse-square {
+	height: 20vh;
+	background-image: url('../images/bg.png');
+	animation: slider $time $tf $i;
+}
+.reverse-square {
+	animation: slider $time $tf $i reverse;
+}
+@keyframes slider {
+	from {
+		background-position: 0 50%;
+	}
+	to {
+		background-position: 100% 50%;
+	}
+}
