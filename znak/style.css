@@ -5,9 +5,14 @@
 }
 body {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content:space-between;
+	align-items: center;
 	background-color: #444;
 	font-family: sans-serif;
+}
+div:not(.octagon) {
+	margin: 15px;
 }
 .octagon-wrap {
 	height: clamp(100px, 30vh, 500px);
@@ -46,4 +51,22 @@ body {
 	font-size: clamp(26px, 9vh, 9vh);
 	letter-spacing: 3px;
 	color: #fff;
+}
+.fire-sign {
+	width: 60vh;
+	height: 25vh;
+	line-height: 50px;
+	text-align: center;
+	background-color: #fff;
+	border: 18px solid red;
+	font-size: 4vh;
+	font-weight: 700;
+	overflow: hidden;
+}
+.circle {
+	height: 30vh;
+	width: 30vh;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 14px solid red;
 }
