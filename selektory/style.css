@@ -2,7 +2,7 @@ body {
     margin: auto;
 }
 
-#selektory {
+#selectors {
     background-color: grey;
     height: 15vh;
     width: 100vw;
@@ -12,7 +12,7 @@ body {
     margin: 0;
 }
 
-.selektory {
+.selectors {
     background-color: yellow;
     width: 80vw;
     height: 50%;
@@ -21,7 +21,7 @@ body {
     align-items: center;
 }
 
-#selektory-teskt {
+#selectors-teskt {
     font-size:50pt;
     color: red;
     font-family: sans-serif;
@@ -91,7 +91,7 @@ body {
     justify-content: center;
 }
 
-.klasa1 {
+.class1 {
     background-color: orange;
     width: 80vw;
     height: 20%;
@@ -102,7 +102,7 @@ body {
     margin-left: 10%;
 }
 
-.klasa2 {
+.class2 {
     background-color: orange;
     width: 60vw;
     height: 20%;
@@ -113,7 +113,7 @@ body {
     margin-left: 10%;
 }
 
-.klasa3 {
+.class3 {
     background-color: orange;
     width: 40vw;
     height: 20%;
@@ -123,14 +123,14 @@ body {
     margin-left: 10%;
 }
 
-#klasa1-tekst {
+#class1-text {
     color: grey;
     font-size:40pt;
     font-family: sans-serif;
     font-weight: bold;
 }
 
-#klasa2-tekst {
+#class2-text {
     color: grey;
     font-size:40pt;
     font-family: sans-serif;
@@ -138,7 +138,7 @@ body {
     margin-left: 4%;
 }
 
-#klasa3-tekst {
+#class3-text {
     color: lightgrey;
     font-size:40pt;
     font-family: sans-serif;
