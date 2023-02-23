@@ -1,0 +1,147 @@
+body {
+	margin: auto;
+}
+
+#selectors {
+	background-color: grey;
+	height: 15vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+.selectors {
+	background-color: yellow;
+	width: 80vw;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#selectors-text {
+	font-size: 50pt;
+	color: red;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+#id1 {
+	background-color: red;
+	width: 100vw;
+	height: 22vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.id1 {
+	display: flex;
+	background-color: pink;
+	width: 80vw;
+	height: 60%;
+	justify-content: right;
+	align-items: center;
+}
+
+#id-text1 {
+	font-size: 40pt;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-right: 4%;
+}
+
+#id2 {
+	background-color: red;
+	width: 100vw;
+	height: 22vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.id2 {
+	display: flex;
+	background-color: pink;
+	width: 80vw;
+	height: 60%;
+	justify-content: left;
+	align-items: center;
+}
+
+#id-text2 {
+	font-size: 40pt;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-left: 4%;
+}
+
+#classes {
+	background-color: limegreen;
+	width: 100vw;
+	height: 41vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.class1 {
+	background-color: orange;
+	width: 80vw;
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2%;
+	margin-left: 10%;
+}
+
+.class2 {
+	background-color: orange;
+	width: 60vw;
+	height: 20%;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	margin-bottom: 2%;
+	margin-left: 10%;
+}
+
+.class3 {
+	background-color: orange;
+	width: 40vw;
+	height: 20%;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	margin-left: 10%;
+}
+
+#class1-text {
+	color: grey;
+	font-size: 40pt;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+#class2-text {
+	color: grey;
+	font-size: 40pt;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-left: 4%;
+}
+
+#class3-text {
+	color: lightgrey;
+	font-size: 40pt;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-right: 4%;
+}
