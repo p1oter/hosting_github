@@ -4,31 +4,158 @@
 	padding: 0;
 }
 body {
-	background-color: #333;
+	background-color: #8041a5;
 }
-.container {
+.main-container {
 	display: flex;
+	flex-wrap: wrap;
 	width: 100vw;
 	height: 100vh;
-    background-color: #129f10;
+	background-color: #8041a5;
 }
 .object {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 50%;
 	height: 50%;
-    background-color: rgb(188, 52, 52);
 }
-.blocks1 {
+.object2row {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 33%;
+	height: 50%;
+}
+.blocks-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 40vh;
+	height: 40vh;
+	background-color: black;
+}
+
+
+.blocks1 {	
+	background-color: #05a239;
+}
+.blocks1 .block1 {
+	position: relative;
+	height: 70%;
+	width: 70%;
+	background-color: gray;
+}
+.block1 .block2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 35%;
+	height: 70%;
+	background-color: rgb(207, 180, 27);
+}
+
+
+.blocks2 {
+	background-color: #fff;
+}
+.container2 {
+	position: relative;
+	background-color: transparent;
+}
+.container2 div {
+	width: 33%;
+	height: 33%;
+}
+.container2 div:nth-child(1){
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: yellow;
+}
+.container2 div:nth-child(2){
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: blue;
+}
+.container2 div:nth-child(3){
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: blueviolet;
+}
+.container2 div:nth-child(4){
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: rgb(7, 189, 7);
+}
+.container2 div:nth-child(5){
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: red;
+}
+
+
+.blocks3 {
+	background-color: #dc8195;
+}
+.container3 div {
+	width: 50%;
+	height: 50%;
+}
+.container3 div:first-child  {
+	background-color: #c30e0e;
+}
+.container3 div:last-child {
+	background-color: #c30e0e;
+}
+
+
+.blocks4 {
 	justify-content: space-evenly;
-    background-color: #fff;
+	align-items: center;
+	background-color: #22d7da;
 }
-.blocks1 > div {
-	width: 40px;
-	height: 40px;
+.blocks4 div {
+	width: 20vh;
+	height: 20vh;
+	background-color: red;
 }
-.blocks1 > block1 {
-    background-color: yellow;
+.blocks4 div:first-child {
+	background-color: yellow;
 }
-.blocks1 > block2 {
-    background-color: tomato;
+
+.circles {
+	position: relative;
+	background-color: #8041a5;
+}
+.circles div {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	/* border: 1px solid #000; */
+}
+.circles div:nth-child(1){
+	position: absolute;
+	z-index: 2;
+	top: 20%;
+	left: 20%;
+	background-color: lightblue;
+}
+.circles div:nth-child(2){
+	position: absolute;
+	z-index: 1;
+	top: 30%;
+	left: 30%;
+	background-color: red;
+}
+.circles div:nth-child(3){
+	position: absolute;
+	z-index: 0;
+	top: 40%;
+	left: 40%;
+	background-color: lightpink;
 }
