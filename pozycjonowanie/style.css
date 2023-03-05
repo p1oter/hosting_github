@@ -133,8 +133,8 @@ body {
 	background-color: #8041a5;
 }
 .circles div {
-	width: 200px;
-	height: 200px;
+	width: 20vh;
+	height: 20vh;
 	border-radius: 50%;
 	/* border: 1px solid #000; */
 }
@@ -155,7 +155,7 @@ body {
 .circles div:nth-child(3){
 	position: absolute;
 	z-index: 0;
-	top: 40%;
-	left: 40%;
+	top: 38%;
+	left: 38%;
 	background-color: lightpink;
 }
