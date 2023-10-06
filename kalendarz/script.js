@@ -19,6 +19,8 @@ for (let i=0; i<6; i++) {
 
 // pierwsze wyświetlenie miesiąca
 getDaysInMonth(monthCounter, year)
+// podświetlenie obecnego dnia
+// weeks[1][currentDate.getDate()-2].style.backgroundColor = '#70B7FF'
 
 function bgChange(month){
     heroImg.style.backgroundImage = `url('./images/${month}.jpg')`
@@ -37,6 +39,7 @@ function cleanWeeks(){
     for (let i=0; i<6; i++){
         for (let j=0; j<7; j++){
             weeks[i][j].innerHTML = ''
+            weeks[i][j].style.backgroundColor = '#fff'
         }
     }
 }
@@ -47,6 +50,9 @@ function getDaysInMonth(month, year){
     let day = 1
     let date = new Date(year, month, day)
     while (date.getMonth() === month) {
+        if (currentDate.getDate() === day && currentDate.getFullYear() === year && currentDate.getMonth() === month) {
+            weeks[weekNum][currentDate.getDate()-2].style.backgroundColor = '#70B7FF'
+        }
         enterDays(date, day)   
         day += 1
         // zmiana na następny dzień tygodnia:
