@@ -1,0 +1,150 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    background-color: orangered;
+    font-family: sans-serif;
+}
+
+.strona1, .strona2, .strona3 {
+    width: 25vw;
+    height: 70vh;
+    background-color: lemonchiffon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.strona1_content, .strona2_content, .strona3_content {
+    width: 80%;
+    height: 80%;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.square1 {
+    background-color: blue;
+    height: 20vw;
+    width: 20vw;
+}
+
+.square2 {
+    background-color: black;
+    position: relative;
+    top: 15%;
+    left: 15%;
+    height: 70%;
+    width: 70%;
+}
+
+.square3 {
+    background-color: purple;
+    position: relative;
+    top: 15%;
+    left: 15%;
+    height: 70%;
+    width: 70%;
+}
+
+.square4 {
+    background-color: yellow;
+    position: relative;
+    top: 15%;
+    left: 15%;
+    height: 70%;
+    width: 70%;
+}
+
+.triangle {
+    height: 80%;
+    width: 90%;
+    margin-top: 10px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.triangle-green, .triangle-blue, .triangle-red, .triangle-yellow {
+    /* padding: 1%; */
+    background-color: lime;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.buttons > div {
+    padding: 5px;
+}
+
+.buttons:hover {
+    cursor: pointer
+}
+
+.main-dot {
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.dot {
+    height: 50px;
+    width: 50px;
+    background-color: purple;
+    border-radius: 50%;
+    opacity: 0
+    /* left: 200px; */
+}
+
+.dot1 {
+    position: relative;
+    top: -20px;
+    left: 50px;
+}
+
+.dot2 {
+    position: relative;
+    right: 50px;
+    bottom: 70px
+}
+
+.dot3 {
+    position: relative;
+    top: -150px
+}
+
+.dot4 {
+    position: relative;
+    top: -90px
+}
+
+.dot5 {
+    position: relative;
+    right: 45px;
+    bottom: 170px
+}
+
+.dot6 {
+    position: relative;
+    left: 50px;
+    bottom: 220px
+}
+
+.platki_button {
+    position: relative;
+    top: -40%;
+    background-color: lime;
+    padding: 5px;
+}
+
+.platki_button:hover {
+    cursor: pointer;
+}
