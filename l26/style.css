@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items: flex-end;
+}
+
+img {
+    display: inline-block;
+}
+
+.pingwin {
+    position: fixed
+}
+
+.pingwin2, .pingwin3, .pingwin4 {
+    position: relative;
+}
+
+.pingwin3 {
+    margin-left: 20vw;
+}
